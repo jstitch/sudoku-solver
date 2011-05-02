@@ -1,0 +1,2 @@
+-Decouple relation between UI (curses) and Sudoku solver algorithm
+Currently, nextsquare function is still far too coupled with the interface.
