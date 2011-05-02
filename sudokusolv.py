@@ -122,7 +122,7 @@ def nextsquare ((x, y), puzle = []):
         printpuzzle(puzle)
         return -1
 
-    elif puzle[x][y] < 0:
+    elif puzle[x][y] < 0 or puzle[x][y] > 0:
         r = nextsquare(nextcoords(x, y), puzle)
         if r == 1:
             return 1
@@ -189,7 +189,7 @@ if __name__ == '__main__':
     scr.keypad(1)
 
     try:
-        solvesudoku('sudoku_test', puzzle[:])
+        solvesudoku('sudoku_test_2', puzzle[:])
     except KeyboardInterrupt:
         pass
     except Exception as e:
