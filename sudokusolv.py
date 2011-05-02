@@ -4,6 +4,7 @@
 Licensed under the GPLv3
 """
 
+import sys
 import curses
 import time
 
@@ -189,7 +190,11 @@ if __name__ == '__main__':
     scr.keypad(1)
 
     try:
-        solvesudoku('sudoku_test_2', puzzle[:])
+        filename = sys.argv[1]
+    except Exception as e:
+        filename = 'sudoku_test'
+    try:
+        solvesudoku(filename, puzzle[:])
     except KeyboardInterrupt:
         pass
     except Exception as e:
