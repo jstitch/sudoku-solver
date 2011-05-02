@@ -1,0 +1,18 @@
+Sudoku Solver v0.1
+
+A python sudoku solver.
+
+It takes a sudoku unsolved puzzle, read from some text file perhaps,
+and tries to solve it.
+
+Right now there's only one algorithm: a recursive brute-force one.
+
+Solution is written into a file too.
+
+It uses python curses to display a very simple UI.
+
+
+
+Sudoku Solver is licensed under the GPLv3
+Javier Novoa C.
+jstitch@gmail.com

@@ -1,5 +1,7 @@
 """
 9x9 Sudoku solver
+
+Licensed under the GPLv3
 """
 
 import curses
